@@ -1,0 +1,184 @@
+body {
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    width: 100%;
+    min-width: 320px;
+    color: white;
+    background: #000;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+}
+
+.logo {
+    width:220px;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    background: rgba(0, 0, 0, 0.33);
+    /*z-index: 2;*/
+    position: absolute;
+    width: 100%;
+}
+
+.nav-content{
+    display: flex;
+    justify-content: center;
+
+}
+.nav ul {
+    display: flex;
+    flex-direction: row;
+}
+
+li {
+    text-transform: capitalize;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    font-size: 25px;
+}
+
+.content {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+
+
+}
+
+.background-img {
+    background-image: url("../images/header-img.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    /*background-position-x: -69%;*/
+    height: 100vh;
+    width: 100%;
+}
+
+.content-title {
+    display: flex;
+    flex-direction: column;
+    font-weight: 700;
+    margin-top: 200px;
+    margin-left:  40px;
+    font-size: 70px;
+}
+
+.content-paragraph{
+    margin-top: 5px;
+    margin-left:  40px;
+    font-size: 38px;
+}
+
+.join-us-btn{
+    background: #ffffff;
+    color: black;
+    margin-top: 5px;
+    font-size: 30px;
+    margin-left:40px;
+    padding: 10px;
+    width:100px;
+    text-align: center;
+}
+
+.about-us{
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    background: black;
+    color: white;
+    /*margin-top:  50px;*/
+}
+
+.about-us-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+
+.about-us-sub-title{
+    font-size: 30px;
+    margin-left:40px;
+}
+
+.about-us-main-title{
+    font-size: 50px;
+    margin-left:40px;
+}
+
+.about-us-main-content{
+    font-size: 20px;
+    margin-left:40px;
+}
+
+.about-us-img{
+    width: 100%;
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+    background: black;
+}
+
+
+@media (min-width: 1000px) {
+    .content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+    }
+
+    .about-us{
+        display: flex;
+        flex-direction:row;
+        justify-content: center;
+        background: black;
+        color: white;
+        /*margin-top:  50px;*/
+    }
+
+    .content-title {
+        display: flex;
+        flex-direction: column;
+        font-weight: 700;
+        margin: 0 40px;
+        font-size:100px;
+    }
+
+    .content-paragraph{
+        margin: 0 40px;
+        font-size: 30px;
+
+    }
+
+    .join-us-btn{
+        background: #ffffff;
+        color: black;
+        padding: 10px;
+        margin: 10px 40px;
+        width:100px;
+    }
+    .about-us-img{
+        width: 100%;
+    }
+}
